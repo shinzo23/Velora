@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <main class="signup-page">
+        <section class="signup-visual">
+            <div class="visual-overlay">
+                <span class="visual-small-text">WELCOME TO VELORA</span>
+                <h1>Beauty begins<br>with <em>you.</em></h1>
+                <p>Create your Velora account and discover beauty made for every version of you.</p>
+            </div>
+        </section>
+        <section class="signup-section">
+            <div class="signup-container">
+                <a href="index.html" class="signup-logo">Velora</a>
+                <div class="signup-heading">
+                    <h2>Create your account</h2>
+                    <p>Join Velora and make beauty a part of your everyday.</p>
+                </div>
+                <form id="signupForm" class="signup-form" novalidate>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" autocomplete="name">
+                        </div>
+                        <small class="error-message" id="fullNameError"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-at"></i>
+                            <input type="text" id="username" name="username" placeholder="Choose a username" autocomplete="username">
+                        </div>
+                        <small class="error-message" id="usernameError"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email">
+                        </div>
+                        <small class="error-message" id="emailError"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Create a password" autocomplete="new-password">
+                            <button type="button" class="password-toggle" id="passwordToggle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                        <small class="password-hint">Use at least 8 characters with one uppercase letter and one number.</small>
+                        <small class="error-message" id="passwordError"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" autocomplete="new-password">
+                            <button type="button" class="password-toggle" id="confirmPasswordToggle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                        <small class="error-message" id="confirmPasswordError"></small>
+                    </div>
+                    <div class="terms-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms">
+                            <span class="custom-checkbox"><i class="fa-solid fa-check"></i></span>
+                            <span class="terms-text">
+                                I agree to the <a href="#">Terms & Conditions </a>and <a href="#">Privacy Policy</a>.
+                            </span>
+                        </label>
+                        <small class="error-message" id="termsError"></small>
+                    </div>
+                    <button type="submit" class="signup-button">
+                        <span>Create Account</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="success-message" id="successMessage">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Account created successfully!</span>
+                    </div>
+                </form>
+                <p class="login-text">Already have an account? <a href="./signin.html">Login</a></p>
+            </div>
+        </section>
+    </main>
+    <script src="./js/signup.js"></script>
+</body>
+</html>

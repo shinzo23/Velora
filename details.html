@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Velora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/details.css">
+</head>
+<body>
+
+    <!-- ! Navbar -->
+    <div id="navbar"></div>
+
+    <!-- ! Product Details -->
+    <main>
+        <section class="product-details">
+            <div class="product-image-section">
+                <div class="product-image">
+                    <img id="productImage" src="" alt="Product">
+                </div>
+                <button id="wishlistButton" class="wishlist-button" type="button">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+            <div class="product-info">
+                <p id="productCategory" class="product-category"></p>
+                <h1 id="productName"></h1>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span id="productRating"></span>
+                    <span id="productReviews"></span>
+                </div>
+                <div class="price">
+                    <span id="productPrice"></span>
+                    <del id="productOldPrice"></del>
+                </div>
+                <p id="productDescription" class="product-description"></p>
+                <div id="shadeSection" class="option-section">
+                    <div class="option-heading">
+                        <h3>Shade</h3>
+                        <span id="selectedShade"></span>
+                    </div>
+                    <div id="shadeOptions" class="shade-options"></div>
+                </div>
+                <div id="sizeSection" class="option-section">
+                    <div class="option-heading">
+                        <h3>Size</h3>
+                        <span id="selectedSize"></span>
+                    </div>
+                    <div id="sizeOptions" class="size-options"></div>
+                </div>
+                <button id="addToCartButton" class="add-cart-button" type="button">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Add to Bag
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- ! Footer -->
+    <div id="page-footer"></div>
+
+    <!-- ! JS -->
+    <script src="./js/fetchNavbarFooter.js"></script>
+    <script src="./js/CurrentUser.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/wishlist.js"></script>
+    <script src="./js/details.js"></script>
+</body>
+</html>

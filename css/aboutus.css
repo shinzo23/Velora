@@ -1,0 +1,492 @@
+.about-hero {
+    width: 100%;
+    min-height: 430px;
+    background: linear-gradient(120deg,#faf0f0 0%,#fcf8f8 55%,#f7e7e7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.about-hero-content {
+    max-width: 760px;
+}
+
+.about-label, .section-label {
+    display: inline-block;
+    color: #B34A44;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.about-hero h1 {
+    color: #222222;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 24px;
+}
+
+.about-hero h1 span {
+    color: #B34A44;
+}
+
+.about-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-story {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 100px 24px;
+}
+
+.about-story-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+.about-story-image {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.about-story-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.about-story-content {
+    max-width: 500px;
+}
+
+
+.about-story-content h2 {
+    color: #222222;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: 24px;
+}
+
+
+.about-story-content p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 13px 20px;
+    background-color: #B34A44;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+
+.about-button:hover {
+    background-color: #B34A44;
+    transform: translateY(-2px);
+}
+
+.about-button i {
+    font-size: 12px;
+}
+
+.about-values {
+    width: 100%;
+    background-color: #fcf8f8;
+    padding: 100px 24px;
+}
+
+.about-values-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    max-width: 600px;
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    color: #222222;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: 18px;
+}
+
+.section-heading p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.value-card {
+    background-color: #ffffff;
+    padding: 32px 25px;
+    border: 1px solid #f1e9e9;
+    border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(168, 45, 45, 0.08);
+}
+
+.value-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    background-color: #B34A44;
+    color: #FFF;
+    border-radius: 50%;
+}
+
+.value-icon i {
+    font-size: 17px;
+}
+
+.value-card h3 {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.why-velora {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 100px 24px;
+}
+
+.why-velora-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+.why-velora-content {
+    max-width: 500px;
+}
+
+.why-velora-content h2 {
+    color: #222222;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: 20px;
+}
+
+.why-velora-content > p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.why-features {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.why-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.why-feature-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    background-color: #faeaf6;
+    color: #B34A44;
+    border-radius: 50%;
+}
+
+
+.why-feature-icon i {
+    font-size: 11px;
+}
+
+.why-feature h3 {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.why-feature p {
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.why-velora-image {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.why-velora-image video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.about-cta {
+    width: 100%;
+    background-color: #B34A44;
+    padding: 90px 24px;
+    text-align: center;
+}
+
+
+.about-cta-content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.about-cta .about-label {
+    color: #f4dcdc;
+}
+
+.about-cta h2 {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: 20px;
+}
+
+.about-cta p {
+    color: #f4dcdc;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background-color: #ffffff;
+    color: #B34A44;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #f9f3f3;
+    transform: translateY(-2px);
+}
+
+.cta-button i {
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .about-hero {
+        min-height: 360px;
+        padding: 60px 20px;
+    }
+    .about-hero-content {
+        max-width: 100%;
+    }
+    .about-label, .section-label {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        margin-bottom: 14px;
+    }
+    .about-hero h1 {
+        font-size: 38px;
+        letter-spacing: -1px;
+        margin-bottom: 18px;
+    }
+    .about-hero p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .about-story {
+        padding: 60px 20px;
+    }
+    .about-story-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .about-story-image {
+        height: 350px;
+    }
+    .about-story-content {
+        max-width: 100%;
+    }
+    .about-story-content h2 {
+        font-size: 32px;
+        letter-spacing: -0.5px;
+        margin-bottom: 18px;
+    }
+    .about-story-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .about-button {
+        font-size: 13px;
+        padding: 12px 17px;
+    }
+    .about-values {
+        padding: 60px 20px;
+    }
+    .section-heading {
+        max-width: 100%;
+        margin-bottom: 35px;
+    }
+    .section-heading h2 {
+        font-size: 32px;
+        letter-spacing: -0.5px;
+        margin-bottom: 15px;
+    }
+    .section-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .value-card {
+        padding: 25px 20px;
+    }
+    .value-icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 18px;
+    }
+    .value-card h3 {
+        font-size: 16px;
+    }
+    .value-card p {
+        font-size: 13px;
+    }
+    .why-velora {
+        padding: 60px 20px;
+    }
+    .why-velora-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .why-velora-content {
+        max-width: 100%;
+    }
+    .why-velora-content h2 {
+        font-size: 32px;
+        letter-spacing: -0.5px;
+    }
+    .why-velora-content > p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+    .why-features {
+        gap: 20px;
+    }
+    .why-feature {
+        gap: 12px;
+    }
+    .why-feature h3 {
+        font-size: 14px;
+    }
+    .why-feature p {
+        font-size: 12px;
+    }
+    .why-velora-image {
+        height: 350px;
+    }
+    .about-cta {
+        padding: 65px 20px;
+    }
+    .about-cta-content {
+        max-width: 100%;
+    }
+    .about-cta h2 {
+        font-size: 34px;
+        letter-spacing: -0.5px;
+    }
+    .about-cta p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .cta-button {
+        font-size: 13px;
+        padding: 13px 20px;
+    }
+}

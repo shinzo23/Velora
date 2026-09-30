@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.footer {
+    width: 100%;
+    background-color: #f7efef;
+    color: #333333;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 24px 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.6fr;
+    gap: 50px;
+}
+
+.footer-brand {
+    max-width: 280px;
+}
+
+.footer-logo {
+    font-family: "Lobster Two", sans-serif;
+    font-style: italic;
+    display: inline-block;
+    color: #B34A44;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 18px;
+}
+
+.footer-description {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.footer-social {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555555;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social i {
+    font-size: 14px;
+}
+
+.footer-social:hover {
+    color: #ffffff;
+    background-color: #B34A44;
+    border-color: #B34A44;
+    transform: translateY(-2px);
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-heading {
+    color: #222222;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.footer-column a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 13px;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #B34A44;
+    padding-left: 3px;
+}
+
+.footer-newsletter {
+    max-width: 280px;
+}
+
+.footer-newsletter > p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.newsletter-form input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 14px;
+    color: #333333;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.newsletter-form input::placeholder {
+    color: #999999;
+}
+
+.newsletter-form button {
+    width: 48px;
+    height: 100%;
+    flex-shrink: 0;
+    border: none;
+    background-color: #B34A44;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #B34A44;
+}
+
+.newsletter-form button i {
+    font-size: 14px;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #ebe3e3;
+}
+
+.footer-bottom-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 65px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom-container > p {
+    color: #888888;
+    font-size: 13px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-bottom-links a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #B34A44;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+    .footer-brand, .footer-newsletter {
+        max-width: 100%;
+    }
+    .footer-logo {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+    .footer-description {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+    .footer-heading {
+        margin-bottom: 15px;
+    }
+    .footer-column a {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .footer-newsletter > p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .footer-bottom-container {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    .footer-bottom-links {
+        gap: 18px;
+    }
+}

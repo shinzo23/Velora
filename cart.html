@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- ! Navbar -->
+    <div id="navbar"></div>
+
+    <!-- ! Cart -->
+    <main class="cart-page">
+
+        <div class="cart-header">
+            <p class="cart-small-title">YOUR BEAUTY BAG</p>
+            <h1>Shopping Bag</h1>
+            <p class="cart-subtitle">Review your selected beauty essentials before checkout.</p>
+        </div>
+
+        <div class="cart-layout">
+
+            <!-- ! Cart Products -->
+            <section class="cart-products">
+                <div class="cart-products-header">
+                    <h2>Your Items</h2>
+                    <span id="cartItemCount">0 Items</span>
+                </div>
+                <div id="cartContainer"></div>
+            </section>
+
+            <!-- ! Order Summary -->
+            <aside class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">₹0</span>
+                </div>
+                <div class="summary-line">
+                    <span>Shipping</span>
+                    <span id="shippingAmount">₹99</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cartTotal">₹0</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">
+                    Proceed to Payment
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="products.html" class="continue-shopping">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Continue Shopping
+                </a>
+                <div class="cart-note">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Every Velora product is carefully selected to make your beauty routine feel special.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ! Address -->
+    <div class="address-overlay" id="addressOverlay">
+        <div class="address-dialog">
+            <button type="button" class="close-address" id="closeAddress">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="address-heading">
+                <p>DELIVERY DETAILS</p>
+                <h2>Where should we deliver?</h2>
+                <span>Enter your delivery address to continue.</span>
+            </div>
+            <form id="addressForm">
+                <div class="address-field">
+                    <label for="houseAddress">House / Flat / Building</label>
+                    <input type="text" id="houseAddress" placeholder="Enter house, flat or building" required>
+                </div>
+                <div class="address-field">
+                    <label for="streetAddress">Street / Area</label>
+                    <input type="text" id="streetAddress" placeholder="Enter street or area" required>
+                </div>
+                <div class="address-row">
+                    <div class="address-field">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="City" required>
+                    </div>
+                    <div class="address-field">
+                        <label for="state">State</label>
+                        <input type="text" id="state" placeholder="State" required>
+                    </div>
+                </div>
+                <div class="address-field">
+                    <label for="pincode">PIN Code</label>
+                    <input type="text" id="pincode" placeholder="Enter 6-digit PIN code" maxlength="6" required>
+                </div>
+                <button type="submit" class="address-submit">
+                    Save & Continue
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ! Footer -->
+    <div id="page-footer"></div>
+
+    <!-- ! JS Scripts-->
+    <script src="./js/fetchNavbarFooter.js"></script>
+    <script src="./js/CurrentUser.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/signin.css">
+</head>
+<body>
+    <main class="auth-page">
+
+        <!-- ! Image Section -->
+        <section class="auth-image-section">
+            <img src="./assets/signin.jfif" alt="Velora beauty products" class="auth-image">
+            <div class="auth-image-overlay"></div>
+            <div class="auth-image-content">
+                <a href="index.html" class="auth-logo">Velora</a>
+                <div class="auth-image-text">
+                    <h1>Beauty that feels like you.</h1>
+                    <p>Discover beauty essentials that help you express your unique style and confidence.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! Form Section -->
+        <section class="auth-form-section">
+            <div class="auth-form-container">
+                <div class="form-heading">
+                    <span class="form-label">WELCOME BACK</span>
+                    <h2>Sign in to <span class="form-logo">Velora</span></h2>
+                    <p>Welcome back! Please enter your details.</p>
+                </div>
+                <form class="auth-form" id="loginForm">
+                    <!-- ! Email Address -->
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="email" required>
+                        </div>
+                    </div>
+                    <!-- ! Forgot Password -->
+                    <div class="form-group">
+                        <div class="label-row">
+                            <label for="password">Password</label>
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+                        <!-- ! Password -->
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+                            <button type="button" class="password-toggle" id="passwordToggle">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ! Remember me -->
+                    <div class="remember-row">
+                        <label class="remember-label">
+                            <input type="checkbox" id="remember" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                    </div>
+                    <!-- ! Sign In Button -->
+                    <button type="submit" class="auth-button">Sign In</button>
+                </form>
+                <!-- ! Redirection to Sign In -->
+                <p class="switch-auth">Don't have an account?
+                    <a href="./signup.html">Create an account</a>
+                </p>
+                <!-- ! Redirection to Home Page -->
+                <a href="./index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i>Back to Velora</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ! JS Scripts -->
+    <script src="js/signin.js"></script>
+</body>
+</html>

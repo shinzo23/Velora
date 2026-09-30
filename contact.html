@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f5f5;
+            color: #333;
+        }
+
+        .contact-header {
+            height: 180px;
+            background: linear-gradient(135deg, #B34A44, #8f3632);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-header h1 {
+            margin: 0 0 5px;
+            font-size: 38px;
+        }
+
+        .contact-header p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            padding: 0 20px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-form h2,
+        .contact-info h2 {
+            color: #B34A44;
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 11px;
+            margin-bottom: 14px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 110px;
+            resize: none;
+        }
+
+        .send-btn {
+            width: 100%;
+            padding: 11px;
+            border: none;
+            border-radius: 6px;
+            background: #B34A44;
+            color: white;
+            cursor: pointer;
+        }
+
+        .send-btn:hover {
+            background: #963d38;
+        }
+
+        .contact-info p {
+            margin: 14px 0;
+            font-size: 15px;
+        }
+
+        .contact-info i {
+            color: #B34A44;
+            width: 22px;
+        }
+        @media (max-width: 600px) {
+            .contact-header {
+                height: 150px;
+                text-align: center;
+            }
+            .contact-header h1 {
+                font-size: 30px;
+            }
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                margin: 30px auto;
+                padding: 0 15px;
+            }
+            .contact-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ! Navbar -->
+    <div id="navbar"></div>
+
+    <section class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you ♡</p>
+    </section>
+    <main class="contact-container">
+        <section class="contact-form">
+            <h2>Send a Message</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </section>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                <strong>Address:</strong> Navi Mumbai, India
+            </p>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <strong>Phone:</strong> +91 98765 43210
+            </p>
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                <strong>Email:</strong> support@velora.com
+            </p>
+        </section>
+    </main>
+
+    <!-- ! Footer -->
+    <div id="page-footer"></div>
+
+    <!-- ! JS Scripts -->
+    <script src="./js/fetchNavbarFooter.js"></script>
+    <script src="./js/CurrentUser.js"></script>
+</body>
+
+</html>

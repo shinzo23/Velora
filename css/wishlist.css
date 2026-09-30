@@ -1,0 +1,232 @@
+#navbar{
+    position: sticky;
+    top: 0;
+}
+
+.wishlist-page {
+    min-height: 70vh;
+    padding: 50px 0 80px;
+    background-color: #ffffff;
+}
+
+.wishlist-container {
+    width: 1200px;
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+}
+
+.wishlist-heading {
+    margin-bottom: 35px;
+}
+
+.wishlist-heading h1 {
+    margin: 0 0 8px;
+    color: #B34A44;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.wishlist-heading p {
+    margin: 0;
+    color: #777777;
+    font-size: 15px;
+}
+
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.wishlist-card {
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.wishlist-image {
+    width: 100%;
+    height: 300px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.wishlist-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.wishlist-details {
+    padding: 20px;
+}
+
+.wishlist-category {
+    margin: 0 0 7px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.wishlist-details h3 {
+    margin: 0 0 12px;
+    color: #222222;
+    font-size: 17px;
+}
+
+.wishlist-price {
+    margin: 0 0 18px;
+    color: #B34A44;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wishlist-actions {
+    display: flex;
+
+    gap: 10px;
+}
+
+.wishlist-cart-button {
+    flex: 1;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    background-color: #B34A44;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.wishlist-cart-button:hover {
+    background-color: #8e2323;
+}
+
+.wishlist-remove-button {
+    width: 43px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #777777;
+    cursor: pointer;
+}
+
+
+.wishlist-remove-button:hover {
+    color: #d33a3a;
+}
+
+.empty-wishlist {
+    grid-column: 1 / -1;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.empty-wishlist i {
+    margin-bottom: 18px;
+    color: #d5b1b1;
+    font-size: 45px;
+}
+
+.empty-wishlist h2 {
+    margin: 0 0 10px;
+    color: #333333;
+    font-size: 22px;
+}
+
+.empty-wishlist p {
+    margin: 0 0 25px;
+    color: #888888;
+}
+
+.continue-shopping-button {
+    display: inline-block;
+    padding: 11px 22px;
+    border-radius: 6px;
+    background-color: #B34A44;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .wishlist-page {
+        min-height: 70vh;
+        padding: 40px 0 60px;
+    }
+    .wishlist-container {
+        width: 100%;
+        max-width: none;
+        padding: 0 15px;
+    }
+    .wishlist-heading {
+        margin-bottom: 28px;
+    }
+    .wishlist-heading h1 {
+        font-size: 30px;
+        margin-bottom: 7px;
+    }
+    .wishlist-heading p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    .wishlist-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .wishlist-card {
+        border-radius: 8px;
+    }
+    .wishlist-image {
+        height: 200px;
+    }
+    .wishlist-details {
+        padding: 14px;
+    }
+    .wishlist-category {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .wishlist-details h3 {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 9px;
+    }
+    .wishlist-price {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .wishlist-actions {
+        gap: 7px;
+    }
+    .wishlist-cart-button {
+        padding: 9px 5px;
+        font-size: 11px;
+    }
+    .wishlist-remove-button {
+        width: 36px;
+        min-width: 36px;
+    }
+    .wishlist-remove-button i {
+        font-size: 12px;
+    }
+    .empty-wishlist {
+        padding: 60px 15px;
+    }
+    .empty-wishlist i {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+    .empty-wishlist h2 {
+        font-size: 21px;
+    }
+    .empty-wishlist p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    .continue-shopping-button {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+}

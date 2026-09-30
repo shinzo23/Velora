@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="css/offers.css">
+</head>
+<body>
+
+    <!-- ! Navbar -->
+    <div id="navbar"></div>
+
+    <main class="offers-page">
+        <section class="offers-hero">
+            <div class="hero-content">
+                <span class="hero-label">VELORA EXCLUSIVE</span>
+                <h1>Beauty Worth<span>Indulging In.</span></h1>
+                <p>Discover handpicked beauty essentials at irresistible prices. Your favorite Velora products, now with more reasons to love them.</p>
+                <a href="#offers" class="hero-button">
+                    Shop Offers
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-highlight">
+                <div class="highlight-circle">
+                    <span>UP TO</span>
+                    <strong id="maxDiscount">0%</strong>
+                    <span>OFF</span>
+                </div>
+            </div>
+        </section>
+        <section class="offers-intro" id="offers">
+            <span class="section-label">SPECIAL PRICES</span>
+            <h2>Beauty, Now For Less.</h2>
+            <p>Treat yourself to your Velora favorites while these exclusive offers last.</p>
+        </section>
+        <section class="offers-products">
+            <div id="offersProducts" class="offers-grid"></div>
+        </section>
+    </main>
+
+    <!-- ! Footer -->
+    <div id="page-footer"></div>
+
+    <!-- ! JS Scripts -->
+    <script src="js/fetchNavbarFooter.js"></script>
+    <script src="./js/CurrentUser.js"></script>
+    <script src="js/data.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/wishlist.js"></script>
+    <script src="js/offers.js"></script>
+</body>
+</html>

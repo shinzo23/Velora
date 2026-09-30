@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/payment.css">
+</head>
+<body>
+    <main class="payment-page">
+        <div class="payment-container">
+            <!-- ! Heading -->
+            <div class="payment-heading">
+                <p class="payment-small-title">VELORA CHECKOUT</p>
+                <h1>Complete Your Order</h1>
+                <p>Review your order, choose your payment method and place your order.</p>
+            </div>
+            <!-- ! Payment Layout -->
+            <div class="payment-layout">
+                <!-- ! Left Side -->
+                <div class="payment-left">
+                    <!-- ! Order Summary -->
+                    <section class="order-summary">
+                        <div class="section-title">
+                            <div>
+                                <p>YOUR ORDER</p>
+                                <h2>Order Summary</h2>
+                            </div>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div id="paymentItems"></div>
+                        <div class="payment-divider"></div>
+                        <div class="payment-row">
+                            <span>Subtotal</span>
+                            <span id="paymentSubtotal">₹0.00</span>
+                        </div>
+                        <div class="payment-row">
+                            <span>Shipping</span>
+                            <span id="paymentShipping">₹99.00</span>
+                        </div>
+                        <div class="payment-divider"></div>
+                        <div class="payment-row payment-total">
+                            <span>Total</span>
+                            <span id="paymentTotal">₹0.00</span>
+                        </div>
+                    </section>
+                    <!-- ! Delivery Address -->
+                    <section class="delivery-address">
+                        <div class="section-title">
+                            <div>
+                                <p>DELIVER TO</p>
+                                <h2>Delivery Address</h2>
+                            </div>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div id="deliveryAddress"></div>
+                    </section>
+                </div>
+                <!-- ! Right Side Payment -->
+                <section class="payment-box">
+                    <div class="section-title">
+                        <div>
+                            <p>SECURE CHECKOUT</p>
+                            <h2>Payment Method</h2>
+                        </div>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <p class="payment-note">Choose your preferred payment method.</p>
+                    <!-- ! Payment Options -->
+                    <div class="payment-options">
+                        <!-- UPI -->
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="UPI" checked>
+                            <span class="radio-circle"></span>
+                            <span class="payment-option-content">
+                                <strong>UPI</strong>
+                                <small>Pay securely using UPI</small>
+                            </span>
+                            <i class="fa-solid fa-qrcode payment-option-icon"></i>
+                        </label>
+                        <!-- Card -->
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="Card">
+                            <span class="radio-circle"></span>
+                            <span class="payment-option-content">
+                                <strong>Credit / Debit Card</strong>
+                                <small>Visa, Mastercard and more</small>
+                            </span>
+                            <i class="fa-regular fa-credit-card payment-option-icon"></i>
+                        </label>
+                        <!-- COD -->
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="COD">
+                            <span class="radio-circle"></span>
+                            <span class="payment-option-content">
+                                <strong>Cash on Delivery</strong>
+                                <small>Pay when your order arrives</small>
+                            </span>
+                            <i class="fa-solid fa-box payment-option-icon"></i>
+                        </label>
+                    </div>
+                    <!-- ! UPI -->
+                    <div id="upiPayment" class="payment-method-content">
+                        <div class="method-heading">
+                            <h3>Pay with UPI</h3>
+                            <p>Scan the QR code using any UPI app.</p>
+                        </div>
+                        <div class="qr-container">
+                            <div id="qrCode"></div>
+                        </div>
+                        <p class="qr-label">Scan the QR code</p>
+                        <p class="qr-amount" id="qrAmount">₹0.00</p>
+                    </div>
+                    <!-- ! Card -->
+                    <div id="cardPayment" class="payment-method-content" style="display: none;">
+                        <div class="method-heading">
+                            <h3>Card Details</h3>
+                            <p>Enter your card details to continue.</p>
+                        </div>
+                        <div class="card-field">
+                            <label for="cardNumber">Card Number</label>
+                            <div class="card-input">
+                                <i class="fa-regular fa-credit-card"></i>
+                                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                            </div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-field">
+                                <label for="expiry">Expiry Date</label>
+                                <input type="text" id="expiry" placeholder="MM / YY" maxlength="7">
+                            </div>
+                            <div class="card-field">
+                                <label for="cvv">CVV</label>
+                                <input type="password" id="cvv" placeholder="•••" maxlength="3">
+                            </div>
+                        </div>
+                        <div class="secure-message">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Your payment information is secure.</span>
+                        </div>
+                    </div>
+                    <!-- ! COD -->
+                    <div id="codPayment" class="payment-method-content" style="display: none;">
+                        <div class="cod-content">
+                            <div class="cod-icon">
+                                <i class="fa-solid fa-box"></i>
+                            </div>
+                            <div>
+                                <h3>Cash on Delivery</h3>
+                                <p>Pay for your order when it is delivered to your address.</p>
+                            </div>
+                        </div>
+                        <div class="cod-note">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Please keep the exact amount ready when your order arrives.</span>
+                        </div>
+                    </div>
+                    <!-- ! Place Order -->
+                    <button type="button" id="placeOrderButton" class="place-order-button">
+                        <span>Place Order</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="payment-security">
+                        <i class="fa-solid fa-lock"></i>
+                        <span>Secure & protected checkout</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- ! JS Scripts -->
+    <script src="./js/CurrentUser.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/wishlist.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script src="./js/payment.js"></script>
+</body>
+</html>

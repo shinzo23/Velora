@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="./index.html" class="navbar-logo">Velora</a>
+            <!-- ! Redirection to pages -->
+            <div class="navbar-links">
+                <a href="./index.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    Categories
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <a href="./face.html">Face</a>
+                        <a href="./eyes.html">Eyes</a>
+                        <a href="./lips.html">Lips</a>
+                        <a href="./cheeks.html">Cheeks</a>
+                        <a href="./tool&nails.html">Nails & Tools</a>
+                    </div>
+                </div>
+                <a href="./aboutus.html" class="nav-link">About Us</a>
+                <a href="./contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="navbar-actions">
+
+                <!-- ! Wishlist Page Redirection -->
+                <a href="./wishlist.html" class="nav-action">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <!-- ! Cart Page Redirection -->
+                <a href="./cart.html" class="nav-action cart-action">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+
+                <!-- ! Login / Logout User Status -->
+                <div class="user-dropdown">
+                    <i class="fa-regular fa-user nav-action" id="userButton"></i>
+                    <div class="user-dropdown-menu" id="userDropdownMenu">
+                        <p id="welcomeUser">Welcome, Guest</p>
+                        <hr>
+                        <div id="orderButton" class="view-order">
+                            <i class="fa-solid fa-box-open"></i>
+                            <span><a href="./orders.html" class="orders-link">My Orders</a></span>
+                        </div>
+                        <hr>
+                        <div id="logoutButton" class="logout-option">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span>Sign Out</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </nav>
+</body>
+</html>
